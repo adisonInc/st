@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=14:antialias=true:autohint=true";
+static char *font ="Liberation Mono:size=15:antialias=true:autogint=true";
 static int borderpx = 2;
 
 /*
@@ -43,7 +43,7 @@ int allowaltscreen = 1;
 
 /* frames per second st should at maximum draw to the screen */
 static unsigned int xfps = 120;
-static unsigned int actionfps = 30;
+static unsigned int actionfps = 120;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
@@ -89,25 +89,25 @@ float alpha = 0.92;
 static const char *colorname[] = {
 	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
 	"#cc241d",
-	"#98971a",
+	"#03ccFF",
 	"#d79921",
 	"#458588",
 	"#b16286",
-	"#689d6a",
+	"#03ccFF",
 	"#a89984",
 	"#928374",
 	"#fb4934",
 	"#b8bb26",
 	"#fabd2f",
-	"#83a598",
+	"#03a598",
 	"#d3869b",
-	"#8ec07c",
+	"#03ccFF",
 	"#ebdbb2",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#282828",   /* 256 -> bg */
-	"#ebdbb2",   /* 257 -> fg */
-	"#add8e6", /* 258 -> cursor */
+	"#060e19",   /* 256 -> bg */
+	"#eeeeee",   /* 257 -> fg */
+	"#5218fa", /* 258 -> cursor */
 };
 
 
@@ -153,7 +153,7 @@ static unsigned int defaultattr = 11;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "font",         STRING,  &font },
+		{ "font",         STRING,  &font},
 		{ "color0",       STRING,  &colorname[0] },
 		{ "color1",       STRING,  &colorname[1] },
 		{ "color2",       STRING,  &colorname[2] },
